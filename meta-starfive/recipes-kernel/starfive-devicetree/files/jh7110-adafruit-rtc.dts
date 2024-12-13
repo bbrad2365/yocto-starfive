@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: GPL-2.0 OR MIT
+/*
+ * Copyright (C) 2024 Benjamin Braddock <bbraddock@bbrad.dev>
+ */
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "starfive,jh7110";
+};
+
+&i2c0 {
+	rtc@68 {
+		compatible = "maxim,ds3231";
+		reg = <0x68>;
+	};
+};
